@@ -7,7 +7,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cryptic;
+package cryptic;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -23,7 +23,7 @@ import javax.swing.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class TestingApp2 extends JFrame {
+public class DoOrDoNot extends JFrame {
     private static void constructGUI() {
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame();
@@ -36,16 +36,17 @@ public class TestingApp2 extends JFrame {
         
         label1.setHorizontalTextPosition(JLabel.CENTER);
         label1.setFont(new Font("Verdana", Font.PLAIN, 22));
-        label1.setForeground(Color.GRAY);
+        label1.setForeground(Color.BLACK);
+        label1.setBackground(Color.BLACK);
         frame.setSize(400,400);
         frame.setLayout(new GridLayout(7, 5));
         JButton button1 = new JButton("<html>Play</html>");
-        button1.setForeground(Color.GRAY);
+        button1.setForeground(Color.BLACK);
         button1.setFont(new Font("Verdana", Font.BOLD ,16));
+        button1.setBackground(Color.white);
         
         
-        
-        ImageIcon imageIcon = new ImageIcon("/Users/iandoering/Desktop/Demo.jpg ");
+        ImageIcon imageIcon = new ImageIcon("/Users/Desktop/Demo.jpg ");
         JLabel label2 = new JLabel(imageIcon);
         
         
